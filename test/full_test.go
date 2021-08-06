@@ -7,8 +7,6 @@ import (
 )
 
 func TestCloudServerFull(t *testing.T) {
-	t.Parallel()
-
 	terraformOptions := &terraform.Options{
 		TerraformDir: "../examples/full/",
 		NoColor:      true,
