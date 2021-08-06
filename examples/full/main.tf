@@ -9,7 +9,7 @@ module "cloud-server" {
   ssh_key_id = hcloud_ssh_key.default.id
   user_data  = file("${path.module}/user-data.yaml")
 
-  firewall_ids = hcloud_firewall.default.id
+  firewall_ids = [hcloud_firewall.default.id]
   mounts = [
     {
       device = hcloud_volume.main.linux_device
