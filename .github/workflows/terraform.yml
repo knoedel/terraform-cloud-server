@@ -49,7 +49,8 @@ jobs:
       - name: Run Terraform Tests
         run: scripts/make-test
         env:
-          TFE_TOKEN: ${{ secrets.TFE_TOKEN_TESTING }}
+          HCLOUD_TOKEN: ${{ secrets.HCLOUD_TOKEN_TESTING }}
+          HETZNER_DNS_API_TOKEN: ${{ secrets.HETZNER_DNS_API_TOKEN_TESTING }}
 
       - name: Bump version and push tag
         if: github.ref == 'refs/heads/master'
