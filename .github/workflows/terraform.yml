@@ -2,7 +2,7 @@ name: terraform
 on:
   push:
     branches:
-      - master
+      - '*'
 
 jobs:
   terraform:
@@ -49,15 +49,18 @@ jobs:
       - name: Run Terraform Tests
         run: scripts/make-test
         env:
-          TFE_TOKEN: ${{ secrets.TFE_TOKEN_TESTING }}
+          HCLOUD_TOKEN: ${{ secrets.HCLOUD_TOKEN_TESTING }}
+          HETZNER_DNS_API_TOKEN: ${{ secrets.HETZNER_DNS_API_TOKEN_TESTING }}
 
       - name: Bump version and push tag
+        if: github.ref == 'refs/heads/master'
         id: tag_version
         uses: mathieudutour/github-tag-action@v5.5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create a GitHub release
+        if: github.ref == 'refs/heads/master'
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ steps.tag_version.outputs.new_tag }}

@@ -9,6 +9,14 @@ module "cloud-server" {
   ssh_key_id = hcloud_ssh_key.default.id
   user_data  = file("${path.module}/user-data.yaml")
 
+  firewall_ids = [hcloud_firewall.default.id]
+  mounts = [
+    {
+      device = hcloud_volume.main.linux_device
+      path   = "/mnt/data"
+    }
+  ]
+
   puppet_role   = "dummy"
   puppet_server = "puppet.example.com"
   puppet_zone   = "cloud"
@@ -41,4 +49,21 @@ resource "hcloud_network_subnet" "external" {
 resource "hcloud_ssh_key" "default" {
   name       = "default"
   public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEAsA+KvUCPVo82M0i+Qqqdw1livUoyksk1xBK1zycnm"
+}
+
+resource "hcloud_firewall" "default" {
+  name = "default"
+}
+
+resource "hcloud_volume" "main" {
+  name     = "bastion_main"
+  size     = 10
+  location = "nbg1"
+  format   = "ext4"
+}
+
+resource "hcloud_volume_attachment" "main" {
+  volume_id = hcloud_volume.main.id
+  server_id = module.cloud-server.server_id
+  automount = true
 }
