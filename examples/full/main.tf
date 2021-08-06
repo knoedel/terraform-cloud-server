@@ -16,6 +16,10 @@ module "cloud-server" {
       path   = "/mnt/data"
     }
   ]
+
+  puppet_role   = "dummy"
+  puppet_server = "puppet.example.com"
+  puppet_zone   = "cloud"
 }
 
 resource "hcloud_network" "internal" {

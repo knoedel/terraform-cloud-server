@@ -8,6 +8,10 @@ module "cloud-server" {
 
   ssh_key_id = hcloud_ssh_key.default.id
   user_data  = file("${path.module}/user-data.yaml")
+
+  puppet_role   = "dummy"
+  puppet_server = "puppet.example.com"
+  puppet_zone   = "cloud"
 }
 
 resource "hcloud_network" "internal" {

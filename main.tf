@@ -19,9 +19,9 @@ data "cloudinit_config" "main" {
 
   part {
     content = templatefile("${path.module}/data/user-data.yaml.tpl", {
-      puppet_role   = "TODO",
-      puppet_zone   = "TODO",
-      puppet_server = "TODO",
+      puppet_role   = var.puppet_role,
+      puppet_zone   = var.puppet_zone,
+      puppet_server = var.puppet_server,
     })
   }
 
