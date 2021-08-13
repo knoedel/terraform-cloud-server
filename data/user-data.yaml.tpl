@@ -48,6 +48,7 @@ puppet:
   conf:
     agent:
       server: ${puppet_server}
+  csr_attributes_path: /etc/puppetlabs/puppet/csr_attributes.yaml
   csr_attributes:
     pp_role: ${puppet_role}
     pp_zone: ${puppet_zone}
