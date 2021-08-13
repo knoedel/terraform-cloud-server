@@ -12,6 +12,7 @@ apt:
       source: "deb http://apt.puppetlabs.com bionic puppet7"
       key: |
         -----BEGIN PGP PUBLIC KEY BLOCK-----
+
         mQINBFyrv4oBEADhL8iyDPZ+GWN7L+A8dpEpggglxTtL7qYNyN5Uga2j0cusDdOD
         ftPHsurLjfxtc2EFGdFK/N8y4LSpq+nOeazhkHcPeDiWC2AuN7+NGjH9LtvMUqKy
         NWPhPYP2r/xPL547oDMdvLXDH5n+FsLFW8QgATHk4AvlIhGng0gWu80OqTCiL0HC
