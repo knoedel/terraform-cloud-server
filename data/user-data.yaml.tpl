@@ -49,5 +49,6 @@ puppet:
     agent:
       server: ${puppet_server}
   csr_attributes:
-    pp_role: ${puppet_role}
-    pp_zone: ${puppet_zone}
+    extension_requests:
+      pp_role: ${puppet_role}
+      pp_zone: ${puppet_zone}
