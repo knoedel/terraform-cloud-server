@@ -28,7 +28,7 @@ module "cloud-server" {
 | Name | Version |
 |------|---------|
 | <a name="provider_cloudinit"></a> [cloudinit](#provider\_cloudinit) | 2.2.0 |
-| <a name="provider_hcloud"></a> [hcloud](#provider\_hcloud) | 1.28.1 |
+| <a name="provider_hcloud"></a> [hcloud](#provider\_hcloud) | 1.30.0 |
 
 ## Modules
 
