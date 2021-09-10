@@ -12,6 +12,9 @@ packages:
   - ca-certificates
   - puppet-agent
 
+runcmd:
+  - passwd -u root
+
 apt:
   sources:
     puppet7:
