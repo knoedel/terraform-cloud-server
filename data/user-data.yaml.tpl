@@ -1,4 +1,10 @@
 #cloud-config
+merge_how:
+  - name: list
+    settings: [append]
+  - name: dict
+    settings: [no_replace, recurse_list]
+
 package_update: true
 package_upgrade: true
 
