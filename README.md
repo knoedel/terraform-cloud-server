@@ -21,14 +21,14 @@ module "cloud-server" {
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.0 |
 | <a name="requirement_cloudinit"></a> [cloudinit](#requirement\_cloudinit) | 2.2.0 |
-| <a name="requirement_hcloud"></a> [hcloud](#requirement\_hcloud) | ~> 1.28 |
+| <a name="requirement_hcloud"></a> [hcloud](#requirement\_hcloud) | 1.31.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_cloudinit"></a> [cloudinit](#provider\_cloudinit) | 2.2.0 |
-| <a name="provider_hcloud"></a> [hcloud](#provider\_hcloud) | 1.30.0 |
+| <a name="provider_hcloud"></a> [hcloud](#provider\_hcloud) | 1.31.1 |
 
 ## Modules
 
@@ -38,9 +38,9 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [hcloud_server.server](https://registry.terraform.io/providers/hetznercloud/hcloud/latest/docs/resources/server) | resource |
-| [hcloud_server_network.external](https://registry.terraform.io/providers/hetznercloud/hcloud/latest/docs/resources/server_network) | resource |
-| [hcloud_server_network.internal](https://registry.terraform.io/providers/hetznercloud/hcloud/latest/docs/resources/server_network) | resource |
+| [hcloud_server.server](https://registry.terraform.io/providers/hetznercloud/hcloud/1.31.1/docs/resources/server) | resource |
+| [hcloud_server_network.external](https://registry.terraform.io/providers/hetznercloud/hcloud/1.31.1/docs/resources/server_network) | resource |
+| [hcloud_server_network.internal](https://registry.terraform.io/providers/hetznercloud/hcloud/1.31.1/docs/resources/server_network) | resource |
 | [cloudinit_config.main](https://registry.terraform.io/providers/hashicorp/cloudinit/2.2.0/docs/data-sources/config) | data source |
 
 ## Inputs
