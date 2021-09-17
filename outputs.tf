@@ -3,12 +3,22 @@ output "server_id" {
   value       = hcloud_server.server.id
 }
 
-output "external_ipv4" {
-  description = "The external IPv4 address of your cloud server"
+output "ipv4" {
+  description = "The public IPv4 address of your cloud server"
   value       = hcloud_server.server.ipv4_address
 }
 
-output "external_ipv6" {
-  description = "The external IPv6 address of your cloud server"
+output "ipv6" {
+  description = "The public IPv6 address of your cloud server"
   value       = hcloud_server.server.ipv6_address
+}
+
+output "internal_ip" {
+  description = "The internal IPv4 address of your cloud server"
+  value       = hcloud_server_network.internal.ip
+}
+
+output "external_ip" {
+  description = "The external IPv4 address of your cloud server"
+  value       = hcloud_server_network.external.ip
 }

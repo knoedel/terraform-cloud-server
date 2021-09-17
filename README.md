@@ -65,8 +65,10 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_external_ipv4"></a> [external\_ipv4](#output\_external\_ipv4) | The external IPv4 address of your cloud server |
-| <a name="output_external_ipv6"></a> [external\_ipv6](#output\_external\_ipv6) | The external IPv6 address of your cloud server |
+| <a name="output_external_ip"></a> [external\_ip](#output\_external\_ip) | The external IPv4 address of your cloud server |
+| <a name="output_internal_ip"></a> [internal\_ip](#output\_internal\_ip) | The internal IPv4 address of your cloud server |
+| <a name="output_ipv4"></a> [ipv4](#output\_ipv4) | The public IPv4 address of your cloud server |
+| <a name="output_ipv6"></a> [ipv6](#output\_ipv6) | The public IPv6 address of your cloud server |
 | <a name="output_server_id"></a> [server\_id](#output\_server\_id) | The id of your cloud server |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
