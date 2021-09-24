@@ -2,6 +2,7 @@ module "cloud-server" {
   source = "../../"
 
   server_name = "cloud-server-testing"
+  domain      = "example.com"
 
   external_network_id = hcloud_network.internal.id
   internal_network_id = hcloud_network.external.id
