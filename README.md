@@ -47,6 +47,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_domain"></a> [domain](#input\_domain) | The domain name of your cloud server. | `string` | n/a | yes |
 | <a name="input_external_network_id"></a> [external\_network\_id](#input\_external\_network\_id) | The id of the external network to connect your cloud server to. | `number` | n/a | yes |
 | <a name="input_firewall_ids"></a> [firewall\_ids](#input\_firewall\_ids) | The ids of the firewall rule sets to apply on your cloud server. | `list(number)` | `[]` | no |
 | <a name="input_internal_network_id"></a> [internal\_network\_id](#input\_internal\_network\_id) | The id of the internal network to connect your cloud server to. | `number` | n/a | yes |

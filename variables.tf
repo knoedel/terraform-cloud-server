@@ -3,6 +3,11 @@ variable "server_name" {
   type        = string
 }
 
+variable "domain" {
+  description = "The domain name of your cloud server."
+  type        = string
+}
+
 variable "server_type" {
   description = "The type of your cloud server."
   default     = "cx11"

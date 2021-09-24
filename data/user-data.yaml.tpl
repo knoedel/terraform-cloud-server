@@ -5,6 +5,8 @@ merge_how:
   - name: dict
     settings: [no_replace, recurse_list]
 
+fqdn: ${server_name}.${domain}
+
 package_update: true
 package_upgrade: true
 
