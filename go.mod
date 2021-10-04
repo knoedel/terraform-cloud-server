@@ -5,7 +5,7 @@ go 1.16
 require (
 	github.com/agext/levenshtein v1.2.2 // indirect
 	github.com/google/go-cmp v0.5.5 // indirect
-	github.com/gruntwork-io/terratest v0.37.11
+	github.com/gruntwork-io/terratest v0.37.12
 	github.com/hashicorp/hcl/v2 v2.10.1 // indirect
 	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/mitchellh/go-wordwrap v1.0.0 // indirect
