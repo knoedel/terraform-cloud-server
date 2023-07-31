@@ -3,6 +3,6 @@ module github.com/knoedel/terraform-cloud-server
 go 1.16
 
 require (
-	github.com/gruntwork-io/terratest v0.43.9
+	github.com/gruntwork-io/terratest v0.43.11
 	github.com/hashicorp/hcl/v2 v2.10.1 // indirect
 )
